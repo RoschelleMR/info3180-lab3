@@ -2,26 +2,34 @@
 {% extends "base.html" %}
 
 {% block main%}
-    <h1>Contact Form</h1>
-    <form method="POST" action="">
-        {{ form.csrf_token }} 
 
-        <p>{{form.name.label}} <span>(Required)</span></p>
-        <p>Please enter your full name</p>
-        {{form.name(size=20)}}
+    <div class="contact-main">
+        <h1>Contact Form</h1>
+        <form method="POST" action="">
+            {{ form.csrf_token }} 
 
-        <p>{{form.email.label}} <span>(Required)</span></p>
-        <p>Please enter your e-mail address</p>
-        {{form.email(size=20)}}
+            <div class="contact-container">
 
-        <p>{{form.subject.label}} <span>(Required)</span></p>
-        <p>Please enter the subject for your message</p>
-        {{form.subject(size=20)}}
+                <p>{{form.name.label}} <span>(Required)</span></p>
+                <p>Please enter your full name</p>
+                {{form.name(class="text-box")}}
 
-        <p>{{form.message.label}} <span>(Required)</span></p>
-        <p>Please enter the message you would like to send</p>
-        {{form.message}}
+                <p>{{form.email.label}} <span>(Required)</span></p>
+                <p>Please enter your e-mail address</p>
+                {{form.email(class="text-box")}}
 
-        {{form.send(class="send_button")}}
-    </form>
+                <p>{{form.subject.label}} <span>(Required)</span></p>
+                <p>Please enter the subject for your message</p>
+                {{form.subject(class="text-box")}}
+
+                <p>{{form.message.label}} <span>(Required)</span></p>
+                <p>Please enter the message you would like to send</p>
+                {{form.message(class="message-box")}}
+
+                {{form.send(class="send_button")}}
+
+            </div>
+        </form>
+    </div>
+    
 {% endblock %}

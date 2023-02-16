@@ -1,3 +1,57 @@
 body {
     padding-top: 5rem;
 }
+
+.danger{
+    color: red;
+    list-style-type: none;
+    text-align: center;
+}
+
+.success{
+    color: rgb(0, 164, 36);
+    list-style-type: none;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 15px;
+}
+
+span{
+    color: red;
+    font-weight: 600;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-main h1{
+    padding-bottom: 15px;
+}
+
+.contact-container p{
+    line-height: 0.8rem;
+}
+
+.text-box{
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.message-box{
+    width: 250px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.send_button{
+    color: white;
+    background-color: rgb(48, 100, 196);
+    width: 100px;
+
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+}
